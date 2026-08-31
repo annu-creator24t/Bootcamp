@@ -1,14 +1,10 @@
 class Solution {
     public boolean validPath(int n, int[][] edges, int source, int destination) {
-
-        // Create adjacency list
         List<List<Integer>> adj = new ArrayList<>();
 
         for (int i = 0; i < n; i++) {
             adj.add(new ArrayList<>());
         }
-
-        // Add edges
         for (int[] edge : edges) {
             int u = edge[0];
             int v = edge[1];
